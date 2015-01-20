@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <android.support.v4.view.ViewPager android:id="@+id/pager"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:id="@+id/radiogroup">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_section1"
+            android:id="@+id/radioButton"
+            android:layout_weight="1"
+            android:button="@null" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_section2"
+            android:id="@+id/radioButton2"
+            android:layout_weight="1"
+            android:button="@null" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_section3"
+            android:id="@+id/radioButton3"
+            android:layout_weight="1"
+            android:button="@null" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_section4"
+            android:id="@+id/radioButton4"
+            android:layout_weight="1"
+            android:button="@null" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_section2"
+            android:id="@+id/radioButton5"
+            android:layout_weight="1"
+            android:button="@null" />
+    </RadioGroup>
+</LinearLayout>
