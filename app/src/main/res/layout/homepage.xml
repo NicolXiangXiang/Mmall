@@ -3,11 +3,6 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="right"></GridLayout>
-
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
@@ -42,16 +37,9 @@
             android:background="@null" />
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
+    <ListView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/disCount">
-    </LinearLayout>
+        android:id="@+id/lv_homepage" />
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/recommend"></LinearLayout>
 </LinearLayout>

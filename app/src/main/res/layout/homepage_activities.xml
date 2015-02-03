@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/border_top_bottom">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/border_right"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/txt_s1_title"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/txt_s1_subtitle"
+            android:layout_below="@+id/txt_s1_title"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_s1"
+            android:layout_below="@+id/txt_s1_subtitle"
+            android:src="@drawable/product1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/border_right"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/txt_s2_title"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/txt_s2_subtitle"
+            android:layout_below="@+id/txt_s2_title"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_s2"
+            android:layout_below="@+id/txt_s2_subtitle"
+            android:src="@drawable/product1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/txt_s3_title"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/txt_s3_subtitle"
+            android:layout_below="@+id/txt_s3_title"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_s3"
+            android:layout_below="@+id/txt_s3_subtitle"
+            android:src="@drawable/product1" />
+    </RelativeLayout>
+</LinearLayout>
