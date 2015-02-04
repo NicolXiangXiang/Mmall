@@ -9,5 +9,14 @@
     <string name="title_section5">我的</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="language_select">语中选择</string>
+    <string name="currency_select">币种选择</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hp_discount_youlike_1" />
+    <string name="hp_discount_youlike_2" />
+    <string name="hp_discount_limittime_1" />
+    <string name="hp_discount_limittime_2" />
+    <string name="hp_discount_recommend_1" />
+    <string name="hp_discount_recommend_2" />
 
 </resources>
