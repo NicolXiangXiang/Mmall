@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
@@ -51,6 +52,22 @@ public class MainActivity extends ActionBarActivity {
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
+mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+    @Override
+    public void onPageScrolled(int i, float v, int i2) {
+
+    }
+
+    @Override
+    public void onPageSelected(int i) {
+        ((RadioButton)mRadioGroup.getChildAt(i)).setChecked(true);
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int i) {
+
+    }
+});
 
         mRadioGroup=(RadioGroup)findViewById(R.id.radiogroup);
         mRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {

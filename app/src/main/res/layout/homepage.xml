@@ -5,41 +5,89 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/border_bottom"
-        android:id="@+id/header">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView"
-            android:src="@drawable/logo"
-            android:layout_gravity="center_vertical" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/btn_search"
+            android:background="@drawable/abc_ic_commit_search_api_mtrl_alpha"
             android:layout_weight="2" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="搜索商品，店铺"
+            android:id="@+id/button"
+            android:drawableRight="@drawable/b_i_s"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="..."
-            android:id="@+id/btn_setting"
-            android:gravity="center_vertical|center_horizontal"
-            android:textColor="#ff0000"
-            android:singleLine="false"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:background="@null" />
+            android:id="@+id/button2"
+            android:layout_weight="2" />
+
     </LinearLayout>
 
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/lv_homepage" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textView2" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"></FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"></FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

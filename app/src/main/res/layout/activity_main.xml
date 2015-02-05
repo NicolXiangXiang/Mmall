@@ -14,46 +14,62 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_weight="2"
         android:id="@+id/radiogroup">
         <RadioButton
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="@string/title_section1"
             android:id="@+id/radioButton"
             android:layout_weight="1"
-            android:button="@null" />
+            android:button="@null"
+            android:drawableTop="@drawable/n_home"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textColor="@drawable/nav_color" />
 
         <RadioButton
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="@string/title_section2"
             android:id="@+id/radioButton2"
             android:layout_weight="1"
-            android:button="@null" />
+            android:button="@null"
+            android:drawableTop="@drawable/n_category"
+            android:gravity="center_horizontal"
+            android:textColor="@drawable/nav_color" />
 
         <RadioButton
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="@string/title_section3"
             android:id="@+id/radioButton3"
             android:layout_weight="1"
-            android:button="@null" />
+            android:button="@null"
+            android:drawableTop="@drawable/n_cart"
+            android:gravity="center_horizontal"
+            android:textColor="@drawable/nav_color" />
 
         <RadioButton
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="@string/title_section4"
             android:id="@+id/radioButton4"
             android:layout_weight="1"
-            android:button="@null" />
+            android:button="@null"
+            android:drawableTop="@drawable/n_store"
+            android:gravity="center_horizontal"
+            android:textColor="@drawable/nav_color" />
 
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/title_section2"
+            android:text="@string/title_section5"
             android:id="@+id/radioButton5"
             android:layout_weight="1"
-            android:button="@null" />
+            android:button="@null"
+            android:drawableTop="@drawable/n_my"
+            android:gravity="center_horizontal"
+            android:textColor="@drawable/nav_color" />
+
     </RadioGroup>
 </LinearLayout>
