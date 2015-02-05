@@ -1,8 +1,6 @@
-package mmall.com.mmall;
+package mmall.com.mmall.fragment;
 
-import android.app.Activity;
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -15,7 +13,9 @@ import android.widget.PopupMenu;
 
 import java.util.ArrayList;
 
-import mmall.com.mmall.model.HomePageDataModel;
+import mmall.com.mmall.R;
+import mmall.com.mmall.adapter.HomePageListAdapter;
+import mmall.com.mmall.models.HomePageDataModel;
 
 
 /**
