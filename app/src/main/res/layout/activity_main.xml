@@ -8,13 +8,16 @@
     android:weightSum="1">
     <android.support.v4.view.ViewPager android:id="@+id/pager"
         android:layout_width="match_parent" android:layout_height="match_parent"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:background="#fff" />
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:id="@+id/radiogroup">
+        android:id="@+id/radiogroup"
+        android:background="@drawable/border_top"
+        android:paddingTop="5dp">
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -25,7 +28,9 @@
             android:drawableTop="@drawable/n_home"
             android:textAlignment="center"
             android:gravity="center_horizontal"
-            android:textColor="@drawable/nav_color" />
+            android:textColor="@drawable/nav_color"
+            android:checked="true"
+            android:textSize="14sp" />
 
         <RadioButton
             android:layout_width="match_parent"
@@ -36,7 +41,8 @@
             android:button="@null"
             android:drawableTop="@drawable/n_category"
             android:gravity="center_horizontal"
-            android:textColor="@drawable/nav_color" />
+            android:textColor="@drawable/nav_color"
+            android:textSize="14sp" />
 
         <RadioButton
             android:layout_width="match_parent"
@@ -47,7 +53,8 @@
             android:button="@null"
             android:drawableTop="@drawable/n_cart"
             android:gravity="center_horizontal"
-            android:textColor="@drawable/nav_color" />
+            android:textColor="@drawable/nav_color"
+            android:textSize="14sp" />
 
         <RadioButton
             android:layout_width="match_parent"
@@ -58,7 +65,8 @@
             android:button="@null"
             android:drawableTop="@drawable/n_store"
             android:gravity="center_horizontal"
-            android:textColor="@drawable/nav_color" />
+            android:textColor="@drawable/nav_color"
+            android:textSize="14sp" />
 
         <RadioButton
             android:layout_width="match_parent"
@@ -69,7 +77,8 @@
             android:button="@null"
             android:drawableTop="@drawable/n_my"
             android:gravity="center_horizontal"
-            android:textColor="@drawable/nav_color" />
+            android:textColor="@drawable/nav_color"
+            android:textSize="14sp" />
 
     </RadioGroup>
 </LinearLayout>

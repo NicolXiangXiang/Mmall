@@ -19,6 +19,7 @@ import android.widget.TextView;
 
 import mmall.com.mmall.R;
 import mmall.com.mmall.fragment.HomePageFragment;
+import mmall.com.mmall.fragment.MyFragment;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -60,7 +61,7 @@ mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 
     @Override
     public void onPageSelected(int i) {
-        ((RadioButton)mRadioGroup.getChildAt(i)).setChecked(true);
+        ((RadioButton) mRadioGroup.getChildAt(i)).setChecked(true);
     }
 
     @Override
@@ -118,6 +119,9 @@ mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             switch (position){
                 case 0:
                     fragment= HomePageFragment.newInstance();
+                    break;
+                case 4:
+                    fragment= MyFragment.newInstance();
                     break;
                 default:
                     fragment= PlaceholderFragment.newInstance(position+1);
