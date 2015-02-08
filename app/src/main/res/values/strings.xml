@@ -18,5 +18,10 @@
     <string name="hp_discount_limittime_2" />
     <string name="hp_discount_recommend_1" />
     <string name="hp_discount_recommend_2" />
-
+    <string name="string_favoriate_product">收藏的产品</string>
+    <string name="string_favoriate_store">收藏的店铺</string>
+    <string name="string_my_store">我的店铺</string>
+    <string name="string_address_management">收藏地址管理</string>
+    <string name="string_all">全部</string>
+    <string name="string_favoriate_trans_product">收藏的易物</string>
 </resources>

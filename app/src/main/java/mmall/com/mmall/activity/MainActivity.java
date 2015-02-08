@@ -1,16 +1,13 @@
-package mmall.com.mmall;
+package mmall.com.mmall.activity;
 
 import java.util.Locale;
 
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,8 +15,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TabHost;
 import android.widget.TextView;
+
+import mmall.com.mmall.R;
+import mmall.com.mmall.fragment.HomePageFragment;
+import mmall.com.mmall.fragment.MyFragment;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -61,7 +61,7 @@ mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 
     @Override
     public void onPageSelected(int i) {
-        ((RadioButton)mRadioGroup.getChildAt(i)).setChecked(true);
+        ((RadioButton) mRadioGroup.getChildAt(i)).setChecked(true);
     }
 
     @Override
@@ -119,6 +119,9 @@ mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             switch (position){
                 case 0:
                     fragment= HomePageFragment.newInstance();
+                    break;
+                case 4:
+                    fragment= MyFragment.newInstance();
                     break;
                 default:
                     fragment= PlaceholderFragment.newInstance(position+1);
