@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#fff">
+    android:background="#f8f8f8"
+    android:showDividers="middle">
 
     <RelativeLayout
         android:orientation="horizontal"
@@ -97,7 +98,11 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/border_bottom">
+        android:background="#fff"
+        android:divider="@drawable/vertical_divider_gray"
+        android:showDividers="beginning|middle|end"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
 
         <LinearLayout
             android:orientation="vertical"
@@ -105,9 +110,9 @@
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:gravity="center_vertical|center_horizontal"
-            android:background="@drawable/border_right"
-            android:layout_margin="5dp"
-            android:id="@+id/ll_all">
+            android:id="@+id/ll_all"
+            android:background="@drawable/universal_item_bg"
+            android:clickable="true">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -134,9 +139,9 @@
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:gravity="center_vertical|center_horizontal"
-            android:layout_margin="5dp"
-            android:background="@drawable/border_right"
-            android:id="@+id/ll_payment">
+            android:id="@+id/ll_payment"
+            android:background="@drawable/universal_item_bg"
+            android:clickable="true">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -163,9 +168,9 @@
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:gravity="center_vertical|center_horizontal"
-            android:layout_margin="5dp"
-            android:background="@drawable/border_right"
-            android:id="@+id/ll_goods">
+            android:id="@+id/ll_goods"
+            android:background="@drawable/universal_item_bg"
+            android:clickable="true">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -192,8 +197,9 @@
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:gravity="center_vertical|center_horizontal"
-            android:layout_margin="5dp"
-            android:id="@+id/ll_comment">
+            android:id="@+id/ll_comment"
+            android:background="@drawable/universal_item_bg"
+            android:clickable="true">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -220,19 +226,24 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="@drawable/border_top_bottom">
+        android:background="#fff"
+        android:divider="@drawable/horizontal_divider_gray"
+        android:showDividers="middle"
+        android:paddingLeft="15dp">
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
             android:gravity="center_vertical"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:background="@drawable/border_bottom"
-            android:layout_marginTop="1dp"
-            android:id="@+id/ll_favoriate_product">
+            android:id="@+id/ll_favoriate_product"
+            android:background="@drawable/universal_item_bg"
+            android:showDividers="beginning|middle|end"
+            android:clickable="true"
+            android:layout_marginLeft="-15dp"
+            android:paddingLeft="15dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -257,11 +268,15 @@
             android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
             android:gravity="center_vertical"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:id="@+id/ll_favoriate_store">
+            android:id="@+id/ll_favoriate_store"
+            android:layout_weight="1"
+            android:layout_marginLeft="-15dp"
+            android:background="@drawable/universal_item_bg"
+            android:clickable="true"
+            android:paddingLeft="15dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -290,10 +305,12 @@
         android:gravity="center_vertical"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:background="@drawable/border_top_bottom"
         android:layout_marginTop="10dp"
         android:paddingLeft="15dp"
-        android:id="@+id/ll_mystore">
+        android:id="@+id/ll_mystore"
+        android:showDividers="beginning|end"
+        android:background="@drawable/universal_item_bg"
+        android:clickable="true">
 
         <TextView
             android:layout_width="wrap_content"
@@ -320,10 +337,11 @@
         android:gravity="center_vertical"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:background="@drawable/border_top_bottom"
         android:layout_marginTop="10dp"
         android:paddingLeft="15dp"
-        android:id="@+id/ll_receipt_address">
+        android:id="@+id/ll_receipt_address"
+        android:background="@drawable/universal_item_bg"
+        android:clickable="true">
 
         <TextView
             android:layout_width="wrap_content"

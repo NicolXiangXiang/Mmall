@@ -24,4 +24,33 @@
     <string name="string_address_management">收藏地址管理</string>
     <string name="string_all">全部</string>
     <string name="string_favoriate_trans_product">收藏的易物</string>
+    <string name="string_my_profile">个人资料</string>
+    <string name="string_modify_pwd" >修改密码</string>
+    <string name="string_mepay_bind" >Mepay绑定</string>
+    <string name="string_spay_bind">S支付绑定</string>
+    <string name="string_about_mmall">关于Mmall</string>
+    <string name="string_clear_cache">清除缓存</string>
+    <string name="string_logout">退出登录</string>
+    <string name="string_profileimage">头像</string>
+    <string name="string_profile_email">登录邮箱</string>
+    <string name="string_profile_name">真实姓名</string>
+    <string name="string_profile_sex">性别</string>
+    <string name="string_profile_location">所在地区</string>
+    <string name="string_profile_phonenumber">手机号码</string>
+    <string name="string_my_setting_changepwd">设置密码</string>
+    <string name="string_pls_old_password">请输入旧密码</string>
+    <string name="string_pls_new_password">请设置新的密码</string>
+    <string name="string_pls_new_password_again">请再一次输入新密码</string>
+    <string name="string_ok" >确定</string>
+    <string name="string_my_address_management">收货地址管理</string>
+    <string name="string_address_modify">收货地址修改</string>
+    <string name="string_submit" >提交</string>
+    <string name="string_my_forgot_password">找回密码</string>
+    <string name="string_pls_auth_email">请输入认证邮箱</string>
+    <string name="string_next">下一步</string>
+    <string name="string_registration">注册</string>
+    <string name="string_pls_email" >请输入邮箱</string>
+    <string name="string_pls_password" >请输入密码</string>
+    <string name="string_registration_success">注册成功</string>
+
 </resources>

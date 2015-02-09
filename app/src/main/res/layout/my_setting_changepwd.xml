@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/border_bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/string_my_setting_changepwd"
+            android:id="@+id/textView6"
+            android:textColor="#000"
+            android:layout_alignParentLeft="false"
+            android:layout_marginLeft="192dp"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="23dp"
+            android:layout_centerInParent="true"
+            android:singleLine="true" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btn_back"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="false"
+            android:background="@drawable/b_i_b"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/l_i_02"
+        android:hint="@string/string_pls_old_password"
+        android:padding="10dp"
+        android:inputType="textWebPassword" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/l_i_02"
+        android:hint="@string/string_pls_new_password"
+        android:padding="10dp"
+        android:inputType="textWebPassword" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/l_i_02"
+        android:hint="@string/string_pls_new_password_again"
+        android:padding="10dp"
+        android:inputType="textWebPassword" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/string_ok"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_red_bg"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="#fff"
+    android:background="#f8f8f8"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -9,15 +9,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/relativeLayout"
-        android:background="@drawable/border_bottom"
         android:paddingTop="10dp"
-        android:paddingBottom="10dp">
+        android:paddingBottom="10dp"
+        android:background="@drawable/border_bottom">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="My Favoriate Store"
+            android:text="@string/string_my_address_management"
             android:id="@+id/textView6"
             android:textColor="#000"
             android:layout_alignParentLeft="false"
@@ -52,5 +52,8 @@
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/lv_favoriate_store" />
+        android:id="@+id/lv_my_address_m"
+        android:divider="@drawable/horizontal_divider_gray"
+        android:background="#fff" />
+
 </LinearLayout>

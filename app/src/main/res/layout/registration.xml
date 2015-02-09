@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/border_bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/string_registration"
+            android:id="@+id/textView6"
+            android:textColor="#000"
+            android:layout_alignParentLeft="false"
+            android:layout_marginLeft="192dp"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="23dp"
+            android:layout_centerInParent="true"
+            android:singleLine="true" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btn_back"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="false"
+            android:background="@drawable/b_i_b"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btn_login"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="false"
+            android:background="@null"
+            android:text="登录"
+            android:textColor="#ff0000"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:divider="@drawable/horizontal_divider_gray"
+        android:showDividers="middle"
+        android:paddingLeft="15dp" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/linearLayout2"
+            android:background="@drawable/universal_item_bg"
+            android:showDividers="beginning|middle|end"
+            android:clickable="true"
+            android:layout_marginLeft="-15dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword|textEmailAddress"
+                android:ems="10"
+                android:id="@+id/etxt_email"
+                android:background="#fff"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/l_i_01"
+                android:hint="@string/string_pls_email"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:id="@+id/linearLayout3"
+            android:layout_weight="1"
+            android:layout_marginLeft="-15dp"
+            android:background="@drawable/universal_item_bg"
+            android:clickable="true"
+            android:paddingLeft="15dp" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textWebPassword"
+                android:ems="10"
+                android:id="@+id/editText4"
+                android:background="#fff"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/l_i_02"
+                android:hint="@string/string_pls_password"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同意"
+            android:id="@+id/checkBox"
+            android:button="@drawable/checkbox_bg"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Mmall国际商城服务条款"
+            android:id="@+id/textView23"
+            android:paddingLeft="10dp"
+            android:textColor="#ff00baff" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/string_submit"
+        android:id="@+id/btn_next"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_red_bg"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+</LinearLayout>

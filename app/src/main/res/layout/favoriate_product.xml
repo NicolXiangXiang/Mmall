@@ -16,7 +16,7 @@
         <Button
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:id="@+id/button2"
+            android:id="@+id/btn_more"
             android:layout_alignParentEnd="false"
             android:layout_alignParentRight="true"
             android:background="@drawable/b_i_m"
@@ -41,10 +41,12 @@
             android:orientation="horizontal"
             android:background="@drawable/b_b_04"
             android:layout_toRightOf="@+id/btn_back"
-            android:layout_toLeftOf="@+id/button2"
+            android:layout_toLeftOf="@+id/btn_more"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:padding="0dp">
+            android:padding="0dp"
+            android:divider="@drawable/vertical_divider_red"
+            android:showDividers="middle">
 
             <RadioButton
                 android:layout_width="match_parent"
@@ -71,7 +73,7 @@
                 android:gravity="center"
                 android:singleLine="true"
                 android:padding="5dp"
-                android:checked="true"
+                android:checked="false"
                 android:background="@drawable/groupbutton_middle_bgcolor" />
 
             <RadioButton

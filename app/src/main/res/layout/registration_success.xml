@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/border_bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/string_registration_success"
+            android:id="@+id/textView6"
+            android:textColor="#000"
+            android:layout_alignParentLeft="false"
+            android:layout_marginLeft="192dp"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="23dp"
+            android:layout_centerInParent="true"
+            android:singleLine="true" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btn_back"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="false"
+            android:background="@drawable/b_i_b"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:background="#fff"
+        android:id="@+id/linearLayout4"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="15dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView18"
+            android:src="@drawable/y" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="请前往您的mmall@mmall.com认证邮箱激活！"
+            android:id="@+id/textView24"
+            android:gravity="center"
+            android:textColor="#555555" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/string_ok"
+        android:id="@+id/btn_next"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_red_bg"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+</LinearLayout>
