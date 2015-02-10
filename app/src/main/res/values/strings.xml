@@ -12,12 +12,12 @@
     <string name="language_select">语中选择</string>
     <string name="currency_select">币种选择</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="hp_discount_youlike_1" />
-    <string name="hp_discount_youlike_2" />
-    <string name="hp_discount_limittime_1" />
-    <string name="hp_discount_limittime_2" />
-    <string name="hp_discount_recommend_1" />
-    <string name="hp_discount_recommend_2" />
+    <string name="hp_discount_youlike_1"></string>
+    <string name="hp_discount_youlike_2"></string>
+    <string name="hp_discount_limittime_1"></string>
+    <string name="hp_discount_limittime_2"></string>
+    <string name="hp_discount_recommend_1"></string>
+    <string name="hp_discount_recommend_2"></string>
     <string name="string_favoriate_product">收藏的产品</string>
     <string name="string_favoriate_store">收藏的店铺</string>
     <string name="string_my_store">我的店铺</string>
@@ -25,8 +25,8 @@
     <string name="string_all">全部</string>
     <string name="string_favoriate_trans_product">收藏的易物</string>
     <string name="string_my_profile">个人资料</string>
-    <string name="string_modify_pwd" >修改密码</string>
-    <string name="string_mepay_bind" >Mepay绑定</string>
+    <string name="string_modify_pwd">修改密码</string>
+    <string name="string_mepay_bind">Mepay绑定</string>
     <string name="string_spay_bind">S支付绑定</string>
     <string name="string_about_mmall">关于Mmall</string>
     <string name="string_clear_cache">清除缓存</string>
@@ -41,16 +41,21 @@
     <string name="string_pls_old_password">请输入旧密码</string>
     <string name="string_pls_new_password">请设置新的密码</string>
     <string name="string_pls_new_password_again">请再一次输入新密码</string>
-    <string name="string_ok" >确定</string>
+    <string name="string_ok">确定</string>
     <string name="string_my_address_management">收货地址管理</string>
     <string name="string_address_modify">收货地址修改</string>
-    <string name="string_submit" >提交</string>
+    <string name="string_submit">提交</string>
     <string name="string_my_forgot_password">找回密码</string>
     <string name="string_pls_auth_email">请输入认证邮箱</string>
     <string name="string_next">下一步</string>
     <string name="string_registration">注册</string>
-    <string name="string_pls_email" >请输入邮箱</string>
-    <string name="string_pls_password" >请输入密码</string>
+    <string name="string_pls_email">请输入邮箱</string>
+    <string name="string_pls_password">请输入密码</string>
     <string name="string_registration_success">注册成功</string>
+    <string name="string_my_mmall">我的Mmall</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_favorite_product">FavoriteProductActivity</string>
+    <string name="string_my_favorite_store">收藏的店铺</string>
+    <string name="string_login">登录</string>
 
 </resources>

@@ -9,8 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/relativeLayout"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
         android:background="@drawable/border_bottom">
 
         <TextView
@@ -45,11 +43,13 @@
         android:ems="10"
         android:id="@+id/editText"
         android:background="#fff"
+        android:textCursorDrawable="@null"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/l_i_02"
         android:hint="@string/string_pls_old_password"
         android:padding="10dp"
-        android:inputType="textWebPassword" />
+        android:inputType="textWebPassword"
+        android:textColor="#000" />
 
     <EditText
         android:layout_width="match_parent"
@@ -57,11 +57,13 @@
         android:ems="10"
         android:id="@+id/editText2"
         android:background="#fff"
+        android:textCursorDrawable="@null"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/l_i_02"
         android:hint="@string/string_pls_new_password"
         android:padding="10dp"
-        android:inputType="textWebPassword" />
+        android:inputType="textWebPassword"
+        android:textColor="#000" />
 
     <EditText
         android:layout_width="match_parent"
@@ -69,11 +71,13 @@
         android:ems="10"
         android:id="@+id/editText3"
         android:background="#fff"
+        android:textCursorDrawable="@null"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/l_i_02"
         android:hint="@string/string_pls_new_password_again"
         android:padding="10dp"
-        android:inputType="textWebPassword" />
+        android:inputType="textWebPassword"
+        android:textColor="#000" />
 
     <Button
         android:layout_width="match_parent"

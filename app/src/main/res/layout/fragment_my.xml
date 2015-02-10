@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="My Mmall"
+            android:text="@string/string_my_mmall"
             android:id="@+id/tv_my_title"
             android:textColor="#000"
             android:layout_alignParentLeft="false"
@@ -33,8 +33,7 @@
             android:layout_alignParentLeft="false"
             android:layout_alignParentTop="false"
             android:layout_toLeftOf="@+id/btn_my_more"
-            android:layout_marginRight="10dp"
-            android:background="@null" />
+            android:layout_marginRight="10dp" />
 
         <Button
             android:layout_width="30dp"
@@ -84,7 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Nicol Xiang"
+            android:text="N 先生"
             android:id="@+id/tv_my_name"
             android:layout_toRightOf="@+id/iv_my_profileimage"
             android:layout_alignBottom="@+id/iv_my_profileimage"
@@ -127,7 +126,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="All"
+                android:text="全部"
                 android:id="@+id/tv_all_text"
                 android:textColor="#FF707074"
                 android:textSize="15sp" />
@@ -156,7 +155,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Payment"
+                android:text="待付款"
                 android:id="@+id/tv_payment_text"
                 android:textColor="#FF707074"
                 android:textSize="15sp" />
@@ -185,7 +184,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Goods"
+                android:text="待收货"
                 android:id="@+id/tv_goods_text"
                 android:textColor="#FF707074"
                 android:textSize="15sp" />
@@ -214,7 +213,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Comment"
+                android:text="待评价"
                 android:id="@+id/tv_comment_text"
                 android:textColor="#FF707074"
                 android:textSize="15sp" />

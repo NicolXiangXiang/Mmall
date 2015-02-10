@@ -9,8 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/relativeLayout"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
         android:background="@drawable/border_bottom">
 
         <TextView
@@ -39,7 +37,7 @@
             android:layout_marginLeft="10dp" />
 
         <Button
-            android:layout_width="30dp"
+            android:layout_width="50dp"
             android:layout_height="30dp"
             android:id="@+id/btn_login"
             android:layout_alignParentEnd="false"
@@ -47,7 +45,7 @@
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="false"
             android:background="@null"
-            android:text="登录"
+            android:text="@string/string_login"
             android:textColor="#ff0000"
             android:layout_marginRight="10dp" />
     </RelativeLayout>
@@ -82,11 +80,12 @@
                 android:ems="10"
                 android:id="@+id/etxt_email"
                 android:background="#fff"
-                android:layout_marginTop="10dp"
                 android:drawableLeft="@drawable/l_i_01"
                 android:hint="@string/string_pls_email"
+                android:textCursorDrawable="@null"
                 android:paddingRight="10dp"
-                android:paddingBottom="10dp" />
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -109,11 +108,12 @@
                 android:ems="10"
                 android:id="@+id/editText4"
                 android:background="#fff"
-                android:layout_marginTop="10dp"
                 android:drawableLeft="@drawable/l_i_02"
                 android:hint="@string/string_pls_password"
                 android:paddingRight="10dp"
-                android:paddingBottom="10dp" />
+                android:textCursorDrawable="@null"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
         </LinearLayout>
     </LinearLayout>
 

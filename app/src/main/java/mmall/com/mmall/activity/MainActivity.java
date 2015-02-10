@@ -2,6 +2,8 @@ package mmall.com.mmall.activity;
 
 import java.util.Locale;
 
+import android.app.Activity;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -22,7 +24,7 @@ import mmall.com.mmall.fragment.HomePageFragment;
 import mmall.com.mmall.fragment.MyFragment;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends FragmentActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -181,7 +183,7 @@ mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
             TextView textView=(TextView)rootView.findViewById(R.id.section_label);
-            textView.setText("123456789");
+            textView.setText("Mmall Mmall");
             return rootView;
         }
     }
