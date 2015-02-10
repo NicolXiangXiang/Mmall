@@ -25,25 +25,31 @@
             android:layout_marginTop="23dp"
             android:layout_centerInParent="true" />
 
-        <Button
+        <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Setting"
             android:id="@+id/btn_my_setting"
             android:layout_alignParentLeft="false"
             android:layout_alignParentTop="false"
-            android:layout_toLeftOf="@+id/btn_my_more"
-            android:layout_marginRight="10dp" />
+            android:layout_toLeftOf="@+id/btn_more"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/b_i_si"
+            android:background="@null"
+            android:padding="5dp" />
 
-        <Button
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/btn_my_more"
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_more"
             android:layout_alignParentEnd="false"
             android:layout_alignParentRight="true"
-            android:background="@drawable/b_i_m"
             android:layout_centerVertical="true"
-            android:layout_marginRight="10dp" />
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:src="@drawable/b_i_m"
+            android:background="@null" />
     </RelativeLayout>
 
     <RelativeLayout

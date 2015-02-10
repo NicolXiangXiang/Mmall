@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -30,7 +31,7 @@ public class MyFragment extends Fragment implements View.OnClickListener {
 
     private ImageView mProfileImage;
     private ImageView mMyBackground;
-    private Button btnSetting;
+    private ImageButton btnSetting;
     private TextView txtName;
     private TextView txtAllCount;
     private TextView txtPaymentCount;
@@ -75,7 +76,7 @@ public class MyFragment extends Fragment implements View.OnClickListener {
 
 
     private void InitiateView(View v) {
-        btnSetting = (Button) v.findViewById(R.id.btn_my_setting);
+        btnSetting = (ImageButton) v.findViewById(R.id.btn_my_setting);
         btnSetting.setOnClickListener(this);
 
         mProfileImage = (ImageView) v.findViewById(R.id.iv_my_profileimage);

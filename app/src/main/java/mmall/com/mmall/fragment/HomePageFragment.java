@@ -8,6 +8,7 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.PopupMenu;
 
@@ -27,7 +28,7 @@ import mmall.com.mmall.models.HomePageDataModel;
  */
 public class HomePageFragment extends Fragment {
     private Button mSearchButton;
-    private Button mSettingButton;
+    private ImageButton mSettingButton;
     private ListView mListView;
     /**
      * Use this factory method to create a new instance of
@@ -58,7 +59,7 @@ public class HomePageFragment extends Fragment {
         View v= inflater.inflate(R.layout.homepage, container, false);
         mListView=(ListView)v.findViewById(R.id.lv_homepage);
         mSearchButton=(Button)v.findViewById(R.id.btn_search);
-        mSettingButton=(Button)v.findViewById(R.id.btn_setting);
+        mSettingButton=(ImageButton)v.findViewById(R.id.btn_more);
         mSettingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

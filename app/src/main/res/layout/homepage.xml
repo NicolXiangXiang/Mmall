@@ -33,26 +33,28 @@
             android:layout_alignParentLeft="false"
             android:layout_alignParentTop="false"
             android:layout_centerInParent="true"
-            android:background="@drawable/h_s_bg"
+            android:background="@drawable/h_s_bg_new"
             android:layout_toRightOf="@+id/imageView"
             android:gravity="left|center_vertical"
             android:paddingLeft="15dp"
             android:textColor="#ccc"
-            android:layout_toLeftOf="@+id/btn_setting"
+            android:layout_toLeftOf="@+id/btn_more"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp" />
 
-        <Button
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/btn_setting"
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_more"
             android:layout_weight="2"
             android:layout_alignParentLeft="false"
             android:layout_alignParentTop="false"
             android:layout_alignParentRight="true"
-            android:background="@drawable/b_i_m"
+            android:background="@null"
             android:layout_marginRight="10dp"
-            android:layout_centerHorizontal="true" />
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/b_i_m" />
 
     </RelativeLayout>
 
