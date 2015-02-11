@@ -27,7 +27,7 @@ import mmall.com.mmall.activity.SettingActivity;
  * Use the {@link mmall.com.mmall.fragment.MyFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MyFragment extends Fragment implements View.OnClickListener {
+public class MyFragment extends BaseFragment {
 
     private ImageView mProfileImage;
     private ImageView mMyBackground;
@@ -99,7 +99,9 @@ public class MyFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
+        super.onClick(v);
+        int viewId=v.getId();
+        switch (viewId) {
             case R.id.btn_my_setting:
                 Intent intent1 = new Intent(getActivity(), SettingActivity.class);
                 startActivity(intent1);

@@ -1,37 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:divider="@drawable/horizontal_divider_gray"
+    android:showDividers="middle|beginning|end"
+    android:background="#fff">
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/border_top_bottom">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Mmall Recommend"
+            android:text="Mmall 热荐"
             android:id="@+id/txt_recommend_title"
-            android:layout_weight="1"
-            android:background="#ff0000" />
+            android:textColor="@color/white"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginBottom="-2dp" />
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical|right"
-            android:layout_weight="2">
+            android:layout_weight="1">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="More>>"
+                android:text="更多>>"
                 android:id="@+id/textView2"
-                android:textColor="#555" />
+                android:textColor="@color/middleGray"
+                android:layout_marginRight="10dp" />
         </LinearLayout>
 
     </LinearLayout>
@@ -40,55 +46,54 @@
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="#fff">
+        android:divider="@drawable/vertical_divider_gray"
+        android:showDividers="middle">
 
         <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
+            android:layout_height="120dp"
+            android:padding="5dp"
             android:layout_weight="1"
-            android:background="@drawable/border_right">
+            android:background="@drawable/universal_item_bg">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Product Title"
                 android:id="@+id/txt_p1_title"
-                android:textSize="25sp"
-                android:textStyle="bold" />
+                android:textSize="15sp"
+                android:textColor="@color/standBlack" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Product Sub Title"
                 android:id="@+id/txt_p1_subtitle"
                 android:layout_below="@+id/txt_p1_title"
-                android:textSize="20sp"
-                android:textColor="#555"
+                android:textSize="10dp"
+                android:textColor="@color/standGray"
                 android:layout_marginTop="5dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="USD456789"
+                android:text="USD568.00"
                 android:id="@+id/txt_p1_discount_price"
                 android:layout_below="@+id/txt_p1_subtitle"
                 android:layout_marginTop="20dp"
-                android:textSize="25sp"
-                android:textColor="#ff0000" />
+                android:textSize="12sp"
+                android:textColor="@color/standRed" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="$123456"
+                android:text="$658.00"
                 android:id="@+id/txt_p1_price"
                 android:layout_below="@+id/txt_p1_discount_price"
-                android:textColor="#555"
-                android:layout_marginTop="8dp" />
+                android:layout_marginTop="8dp"
+                android:textSize="12sp"
+                android:textColor="@color/standGray" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -96,16 +101,22 @@
                 android:id="@+id/iv_p1"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="false"
-                android:layout_alignParentBottom="false"
-                android:src="#ff54ff3a"
-                android:layout_alignWithParentIfMissing="false" />
+                android:layout_alignParentBottom="true"
+                android:layout_alignWithParentIfMissing="false"
+                android:adjustViewBounds="true"
+                android:maxHeight="60dp"
+                android:layout_alignParentStart="false"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp" />
 
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="2" >
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="3dp"
+            android:background="@drawable/universal_item_bg">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -118,38 +129,41 @@
                 android:layout_alignParentTop="false"
                 android:layout_centerHorizontal="true"
                 android:layout_alignParentLeft="false"
-                android:layout_alignWithParentIfMissing="false" />
+                android:layout_alignWithParentIfMissing="false"
+                android:adjustViewBounds="true"
+                android:maxHeight="60dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Product Title"
                 android:id="@+id/txt_p2_title"
-                android:textSize="25sp"
-                android:textStyle="bold"
+                android:textSize="15sp"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@+id/iv_p2" />
+                android:layout_below="@+id/iv_p2"
+                android:textColor="@color/standBlack" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="USD456789"
+                android:text="USD568.00"
                 android:id="@+id/txt_p2_discount_price"
                 android:layout_below="@+id/txt_p2_title"
-                android:textSize="25sp"
-                android:textColor="#ff0000" />
+                android:textSize="12sp"
+                android:textColor="@color/standRed" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="$123456"
+                android:text="$256.00"
                 android:id="@+id/txt_p2_price"
-                android:textColor="#555"
                 android:layout_marginTop="8dp"
-                android:layout_toRightOf="@+id/txt_p2_discount_price" />
+                android:layout_toRightOf="@+id/txt_p2_discount_price"
+                android:textSize="12sp"
+                android:layout_alignBottom="@+id/txt_p2_discount_price"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/standGray" />
 
         </RelativeLayout>
     </LinearLayout>
@@ -158,15 +172,17 @@
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/border_top_bottom">
+        android:showDividers="middle"
+        android:divider="@drawable/vertical_divider_gray">
 
         <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/border_right"
             android:layout_marginTop="1dp"
-            android:layout_marginBottom="1dp">
+            android:layout_marginBottom="1dp"
+            android:padding="3dp"
+            android:background="@drawable/universal_item_bg">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -180,49 +196,52 @@
                 android:layout_centerHorizontal="true"
                 android:layout_alignParentLeft="false"
                 android:layout_alignWithParentIfMissing="false"
-                android:focusableInTouchMode="false" />
+                android:focusableInTouchMode="false"
+                android:adjustViewBounds="true"
+                android:maxHeight="60dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Product Title"
                 android:id="@+id/txt_p3_title"
-                android:textSize="25sp"
-                android:textStyle="bold"
+                android:textSize="15sp"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@+id/iv_p3" />
+                android:layout_below="@+id/iv_p3"
+                android:textColor="@color/standBlack" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="USD456789"
+                android:text="USD568.00"
                 android:id="@+id/txt_p3_discount_price"
                 android:layout_below="@+id/txt_p3_title"
-                android:textSize="25sp"
-                android:textColor="#ff0000"
-                android:layout_centerHorizontal="true" />
+                android:textSize="12sp"
+                android:textColor="@color/standRed" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="$123456"
+                android:text="$256.00"
                 android:id="@+id/txt_p3_price"
-                android:textColor="#555"
                 android:layout_marginTop="8dp"
                 android:layout_toRightOf="@+id/txt_p3_discount_price"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:layout_alignBottom="@+id/txt_p3_discount_price"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/standGray" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/border_right"
             android:layout_marginTop="1dp"
-            android:layout_marginBottom="1dp">
+            android:layout_marginBottom="1dp"
+            android:padding="3dp"
+            android:background="@drawable/universal_item_bg">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -235,47 +254,51 @@
                 android:layout_alignParentTop="false"
                 android:layout_centerHorizontal="true"
                 android:layout_alignParentLeft="false"
-                android:layout_alignWithParentIfMissing="false" />
+                android:layout_alignWithParentIfMissing="false"
+                android:adjustViewBounds="true"
+                android:maxHeight="60dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Product Title"
                 android:id="@+id/txt_p4_title"
-                android:textSize="25sp"
-                android:textStyle="bold"
+                android:textSize="15sp"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@+id/iv_p4" />
+                android:layout_below="@+id/iv_p4"
+                android:textColor="@color/standBlack" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="USD456789"
+                android:text="USD568.00"
                 android:id="@+id/txt_p4_discount_price"
                 android:layout_below="@+id/txt_p4_title"
-                android:textSize="25sp"
-                android:textColor="#ff0000" />
+                android:textSize="12sp"
+                android:textColor="@color/standRed" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="$123456"
+                android:text="$256.00"
                 android:id="@+id/txt_p4_price"
-                android:textColor="#555"
                 android:layout_marginTop="8dp"
-                android:layout_toRightOf="@+id/txt_p4_discount_price" />
+                android:layout_toRightOf="@+id/txt_p4_discount_price"
+                android:textSize="12sp"
+                android:layout_alignBottom="@+id/txt_p4_discount_price"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/standGray" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/border_right"
             android:layout_marginTop="1dp"
-            android:layout_marginBottom="1dp">
+            android:layout_marginBottom="1dp"
+            android:padding="3dp"
+            android:background="@drawable/universal_item_bg">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -289,38 +312,41 @@
                 android:layout_centerHorizontal="true"
                 android:layout_alignParentLeft="false"
                 android:layout_alignWithParentIfMissing="false"
-                android:focusableInTouchMode="false" />
+                android:focusableInTouchMode="false"
+                android:adjustViewBounds="true"
+                android:maxHeight="60dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Product Title"
                 android:id="@+id/txt_p5_title"
-                android:textSize="25sp"
-                android:textStyle="bold"
+                android:textSize="15sp"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@+id/iv_p5" />
+                android:layout_below="@+id/iv_p5"
+                android:textColor="@color/standBlack" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="USD456789"
+                android:text="USD568.00"
                 android:id="@+id/txt_p5_discount_price"
                 android:layout_below="@+id/txt_p5_title"
-                android:textSize="25sp"
-                android:textColor="#ff0000" />
+                android:textSize="12sp"
+                android:textColor="@color/standRed" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="$123456"
+                android:text="$256.00"
                 android:id="@+id/txt_p5_price"
-                android:textColor="#555"
                 android:layout_marginTop="8dp"
-                android:layout_toRightOf="@+id/txt_p5_discount_price" />
+                android:layout_toRightOf="@+id/txt_p5_discount_price"
+                android:textSize="12sp"
+                android:layout_alignBottom="@+id/txt_p5_discount_price"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/standGray" />
         </RelativeLayout>
     </LinearLayout>
 

@@ -39,6 +39,7 @@
             android:paddingLeft="15dp"
             android:textColor="#ccc"
             android:layout_toLeftOf="@+id/btn_more"
+            android:drawableRight="@drawable/s_i"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp" />
 
@@ -59,8 +60,9 @@
     </RelativeLayout>
 
     <ListView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lv_homepage" />
+        android:id="@+id/lv_homepage"
+        android:dividerHeight="10dp" />
 
 </LinearLayout>

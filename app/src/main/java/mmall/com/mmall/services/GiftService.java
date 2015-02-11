@@ -155,7 +155,7 @@ public class GiftService extends ServiceBase {
 //						params);
 //				break;
 //
-//			default:
+//			img_default:
 //				break;
 //			}
 //			result = JsonHelper.convert(content,
@@ -199,7 +199,7 @@ public class GiftService extends ServiceBase {
 //				content = execute(HttpMethod.POST, ApiUrl.MY_GIFT_GIVEN_WECHAT, params);
 //				break;
 //
-//			default:
+//			img_default:
 //				break;
 //			}
 //			result = JsonHelper.convert(content,

@@ -43,8 +43,8 @@ public class MmallApp extends Application {
 		// globalConfig = BitmapGlobalConfig.getInstance(context, cachePath);
 		bitmapUtils.configMemoryCacheEnabled(true);
 		bitmapUtils.configDiskCacheEnabled(true);
-		bitmapUtils.configDefaultLoadingImage(R.drawable.cache);// 默认背景图片
-		bitmapUtils.configDefaultLoadFailedImage(R.drawable.cache);// 加载失败图片
+		bitmapUtils.configDefaultLoadingImage(R.drawable.img_default);// 默认背景图片
+		bitmapUtils.configDefaultLoadFailedImage(R.drawable.img_default);// 加载失败图片
 		bitmapUtils.configDefaultBitmapConfig(Bitmap.Config.RGB_565);// 设置图片压缩类型
 
 		dbUtils = DbUtils.create(context, DB_NAME, DB_VERSION,
@@ -67,12 +67,12 @@ public class MmallApp extends Application {
 	 */
 	public static void setDefaultImage(boolean isRect) {
 		if (isRect) {
-			bitmapUtils.configDefaultLoadingImage(R.drawable.cache_rectangle);// 默认背景图片
+			bitmapUtils.configDefaultLoadingImage(R.drawable.img_default);// 默认背景图片
 			bitmapUtils
-					.configDefaultLoadFailedImage(R.drawable.cache_rectangle);// 加载失败图片
+					.configDefaultLoadFailedImage(R.drawable.img_default);// 加载失败图片
 		} else {
-			bitmapUtils.configDefaultLoadingImage(R.drawable.cache);// 默认背景图片
-			bitmapUtils.configDefaultLoadFailedImage(R.drawable.cache);// 加载失败图片
+			bitmapUtils.configDefaultLoadingImage(R.drawable.img_default);// 默认背景图片
+			bitmapUtils.configDefaultLoadFailedImage(R.drawable.img_default);// 加载失败图片
 		}
 	}
 

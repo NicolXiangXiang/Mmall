@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.PopupWindow;
 
+import mmall.com.mmall.BarMoreWindow;
 import mmall.com.mmall.R;
 
 /**
@@ -31,13 +32,7 @@ public class BaseActivity extends Activity implements View.OnClickListener {
                 this.finish();
                 break;
             case R.id.btn_more:
-                View popupView = getLayoutInflater().inflate(R.layout.menu_common, null);
-
-                PopupWindow mPopupWindow = new PopupWindow(popupView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, true);
-                mPopupWindow.setTouchable(true);
-                mPopupWindow.setOutsideTouchable(true);
-                mPopupWindow.setBackgroundDrawable(new BitmapDrawable(getResources(), (Bitmap) null));
-                mPopupWindow.showAsDropDown(v);
+                BarMoreWindow.getInstence().showWindow(v);
                 break;
         }
 

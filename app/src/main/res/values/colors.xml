@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="white">#fff</color>
-    <color name="red">#ff0000</color>
+    <color name="red">#ffed202f</color>
+    <color name="standRed">#ffed202f</color>
+    <color name="standBlue">#ff019ee1</color>
+    <color name="standOrange">#ffffa800</color>
+    <color name="standBlack">#ff333333</color>
+    <color name="middleBlack">#ff444444</color>
+    <color name="standGray">#ff666666</color>
+    <color name="middleGray">#ff999999</color>
+    <color name="line">#ffe6e6e6</color>
 </resources>
