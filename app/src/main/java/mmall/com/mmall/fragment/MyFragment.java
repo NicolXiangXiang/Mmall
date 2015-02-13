@@ -15,9 +15,11 @@ import android.widget.TextView;
 import mmall.com.mmall.R;
 import mmall.com.mmall.activity.FavoriteProductActivity;
 import mmall.com.mmall.activity.FavoriteStoreActivity;
+import mmall.com.mmall.activity.LoginActivity;
 import mmall.com.mmall.activity.MyStoreActivity;
 import mmall.com.mmall.activity.ReceiptAddressActivity;
 import mmall.com.mmall.activity.SettingActivity;
+import mmall.com.mmall.services.UserService;
 
 
 /**
@@ -60,9 +62,6 @@ public class MyFragment extends BaseFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-
-        }
     }
 
     @Override

@@ -81,13 +81,15 @@
                 android:ems="10"
                 android:id="@+id/etxt_email"
                 android:background="#fff"
+                android:drawablePadding="6dp"
                 android:drawableLeft="@drawable/l_i_01"
                 android:hint="@string/string_pls_email"
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
                 android:textCursorDrawable="@null"
-                android:textColor="#000"
-                android:paddingTop="10dp" />
+                android:textColor="@color/standBlack"
+                android:paddingTop="10dp"
+                android:textColorHint="@color/middleGray" />
         </LinearLayout>
 
         <LinearLayout
@@ -107,15 +109,17 @@
                 android:layout_height="wrap_content"
                 android:inputType="textWebPassword"
                 android:ems="10"
-                android:id="@+id/editText4"
+                android:id="@+id/etxt_password"
                 android:background="#fff"
                 android:textCursorDrawable="@null"
-                android:textColor="#000"
+                android:textColor="@color/standBlack"
+                android:drawablePadding="6dp"
                 android:drawableLeft="@drawable/l_i_02"
                 android:hint="@string/string_pls_password"
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
-                android:paddingTop="10dp" />
+                android:paddingTop="10dp"
+                android:textColorHint="@color/middleGray" />
         </LinearLayout>
     </LinearLayout>
 
@@ -157,6 +161,7 @@
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:textColor="#fff"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:enabled="false" />
 
 </LinearLayout>

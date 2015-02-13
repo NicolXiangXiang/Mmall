@@ -82,12 +82,15 @@
                 android:ems="10"
                 android:id="@+id/etxt_email"
                 android:background="#fff"
+                android:drawablePadding="6dp"
                 android:drawableLeft="@drawable/l_i_01"
                 android:hint="@string/string_pls_email"
                 android:textCursorDrawable="@null"
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
-                android:paddingTop="10dp" />
+                android:paddingTop="10dp"
+                android:textColorHint="@color/middleGray"
+                android:textColor="@color/standBlack" />
         </LinearLayout>
 
         <LinearLayout
@@ -110,12 +113,15 @@
                 android:ems="10"
                 android:id="@+id/editText4"
                 android:background="#fff"
+                android:drawablePadding="6dp"
                 android:drawableLeft="@drawable/l_i_02"
                 android:hint="@string/string_pls_password"
                 android:paddingRight="10dp"
                 android:textCursorDrawable="@null"
                 android:paddingBottom="10dp"
-                android:paddingTop="10dp" />
+                android:paddingTop="10dp"
+                android:textColorHint="@color/middleGray"
+                android:textColor="@color/standBlack" />
         </LinearLayout>
     </LinearLayout>
 

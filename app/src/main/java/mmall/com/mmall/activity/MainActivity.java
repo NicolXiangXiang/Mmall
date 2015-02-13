@@ -3,6 +3,7 @@ package mmall.com.mmall.activity;
 import java.util.Locale;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.Fragment;
@@ -22,6 +23,7 @@ import android.widget.TextView;
 import mmall.com.mmall.R;
 import mmall.com.mmall.fragment.HomePageFragment;
 import mmall.com.mmall.fragment.MyFragment;
+import mmall.com.mmall.services.UserService;
 
 
 public class MainActivity extends FragmentActivity {
@@ -55,24 +57,29 @@ public class MainActivity extends FragmentActivity {
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
-mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-    @Override
-    public void onPageScrolled(int i, float v, int i2) {
+        mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int i, float v, int i2) {
+                if(i==4){
+                    if(new UserService().getSignInUser()==null){//未登录
+                        Intent intentLogin = new Intent(MainActivity.this, LoginActivity.class);
+                        startActivity(intentLogin);
+                    }
+                }
+            }
 
-    }
+            @Override
+            public void onPageSelected(int i) {
+                ((RadioButton) mRadioGroup.getChildAt(i)).setChecked(true);
+            }
 
-    @Override
-    public void onPageSelected(int i) {
-        ((RadioButton) mRadioGroup.getChildAt(i)).setChecked(true);
-    }
+            @Override
+            public void onPageScrollStateChanged(int i) {
 
-    @Override
-    public void onPageScrollStateChanged(int i) {
+            }
+        });
 
-    }
-});
-
-        mRadioGroup=(RadioGroup)findViewById(R.id.radiogroup);
+        mRadioGroup = (RadioGroup) findViewById(R.id.radiogroup);
         mRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -81,6 +88,14 @@ mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
         });
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(new UserService().getSignInUser()==null){
+            mViewPager.setCurrentItem(0);
+            ((RadioButton)mRadioGroup.getChildAt(0)).setChecked(true);
+        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -118,15 +133,15 @@ mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
         @Override
         public Fragment getItem(int position) {
             Fragment fragment;
-            switch (position){
+            switch (position) {
                 case 0:
-                    fragment= HomePageFragment.newInstance();
+                    fragment = HomePageFragment.newInstance();
                     break;
                 case 4:
-                    fragment= MyFragment.newInstance();
+                    fragment = MyFragment.newInstance();
                     break;
                 default:
-                    fragment= PlaceholderFragment.newInstance(position+1);
+                    fragment = PlaceholderFragment.newInstance(position + 1);
                     break;
             }
             return fragment;
@@ -182,7 +197,7 @@ mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-            TextView textView=(TextView)rootView.findViewById(R.id.section_label);
+            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
             textView.setText("Mmall Mmall");
             return rootView;
         }

@@ -54,6 +54,10 @@
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:name=".activity.LoginActivity">
         </activity>
+        <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:name=".activity.RegistrationActivity">
+        </activity>
     </application>
 
 </manifest>

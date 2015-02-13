@@ -21,7 +21,9 @@ public class BaseActivity extends Activity implements View.OnClickListener {
     protected void onStart() {
         super.onStart();
         this.findViewById(R.id.btn_back).setOnClickListener(this);
-        this.findViewById(R.id.btn_more).setOnClickListener(this);
+        View btnMore=this.findViewById(R.id.btn_more);
+        if(btnMore!=null)
+        btnMore.setOnClickListener(this);
     }
 
     @Override
