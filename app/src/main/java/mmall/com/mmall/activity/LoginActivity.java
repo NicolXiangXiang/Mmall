@@ -75,7 +75,7 @@ public class LoginActivity extends BaseActivity implements TextWatcher {
         }
     }
 
-    public class LoginTask extends
+    protected class LoginTask extends
             AsyncTask<String,UserModel,UserModel>{
 
         private String email;
