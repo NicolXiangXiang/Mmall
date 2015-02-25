@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#fff"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="搜索分类"
+            android:id="@+id/btn_search"
+            android:layout_weight="1"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerInParent="true"
+            android:background="@drawable/h_s_bg_new"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:textColor="#ccc"
+            android:layout_toLeftOf="@+id/btn_more"
+            android:drawableRight="@drawable/s_i"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_more"
+            android:layout_weight="2"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/b_i_m" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_category"
+        android:dividerHeight="10dp" />
+</LinearLayout>

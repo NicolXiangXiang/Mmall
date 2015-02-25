@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@drawable/universal_item_bg">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/img_item_store"
+        android:layout_centerVertical="true"
+        android:background="@drawable/roundcorner_bg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Premium Bag"
+        android:id="@+id/txt_store_title"
+        android:layout_toRightOf="@+id/img_item_store"
+        android:textColor="@color/standBlack"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="马来西亚"
+        android:id="@+id/txt_store_subtitle"
+        android:layout_below="@+id/txt_store_title"
+        android:textSize="12sp"
+        android:textColor="@color/standGray"
+        android:layout_alignLeft="@+id/txt_store_title"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

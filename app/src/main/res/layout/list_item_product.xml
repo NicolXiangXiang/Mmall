@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/universal_item_bg">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/img_item_product"
+        android:layout_centerVertical="true"
+        android:background="@drawable/roundcorner_bg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="澳诗莱 女士包 LDS-09236"
+        android:id="@+id/txt_item_title"
+        android:textColor="@color/standBlack"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/img_item_product"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="USD 299.00"
+        android:id="@+id/txt_item_discountprice"
+        android:textColor="@color/standRed"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/txt_item_title"
+        android:layout_alignLeft="@+id/txt_item_title"
+        android:gravity="bottom"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="USD 399.00"
+        android:id="@+id/txt_item_price"
+        android:textColor="@color/standGray"
+        android:textSize="13sp"
+        android:layout_below="@+id/txt_item_title"
+        android:layout_toRightOf="@+id/txt_item_discountprice"
+        android:layout_alignBottom="@+id/txt_item_discountprice"
+        android:gravity="bottom"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Premium Bag"
+        android:id="@+id/txt_item_brand"
+        android:layout_alignLeft="@+id/txt_item_title"
+        android:layout_below="@+id/txt_item_discountprice"
+        android:textColor="@color/middleGray"
+        android:textSize="12sp"
+        android:gravity="bottom"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="马来西亚"
+        android:id="@+id/txt_item_from"
+        android:layout_below="@+id/txt_item_discountprice"
+        android:textColor="@color/middleGray"
+        android:textSize="12sp"
+        android:layout_alignBottom="@+id/txt_item_brand"
+        android:gravity="bottom"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>
