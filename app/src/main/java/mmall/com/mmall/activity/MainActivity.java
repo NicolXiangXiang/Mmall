@@ -21,6 +21,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import mmall.com.mmall.R;
+import mmall.com.mmall.fragment.CategoryFragment;
 import mmall.com.mmall.fragment.HomePageFragment;
 import mmall.com.mmall.fragment.MyFragment;
 import mmall.com.mmall.services.UserService;
@@ -136,6 +137,9 @@ public class MainActivity extends FragmentActivity {
             switch (position) {
                 case 0:
                     fragment = HomePageFragment.newInstance();
+                    break;
+                case 1:
+                    fragment = CategoryFragment.newInstance();
                     break;
                 case 4:
                     fragment = MyFragment.newInstance();

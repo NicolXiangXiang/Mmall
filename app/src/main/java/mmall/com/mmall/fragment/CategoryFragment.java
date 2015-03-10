@@ -18,6 +18,7 @@ import mmall.com.mmall.activity.FavoriteStoreActivity;
 import mmall.com.mmall.activity.MyStoreActivity;
 import mmall.com.mmall.activity.ReceiptAddressActivity;
 import mmall.com.mmall.activity.SettingActivity;
+import mmall.com.mmall.adapter.CategoryListAdapter;
 
 
 /**
@@ -57,7 +58,7 @@ public class CategoryFragment extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_my, container, false);
+        View v = inflater.inflate(R.layout.fragment_category, container, false);
         InitiateView(v);
         return v;
     }
@@ -67,6 +68,7 @@ public class CategoryFragment extends BaseFragment {
         btnSearch=(Button)v.findViewById(R.id.btn_search);
         imgBtnMore=(ImageButton)v.findViewById(R.id.btn_more);
         lvCategory=(ListView)v.findViewById(R.id.lv_category);
+        lvCategory.setAdapter(new CategoryListAdapter(getActivity()));
     }
 
     @Override

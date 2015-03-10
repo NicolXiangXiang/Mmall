@@ -82,7 +82,7 @@ public class HomePageFragment extends BaseFragment {
 //        });
         mListAdapter = new HomePageListAdapter(null, HomePageFragment.this.getActivity());
         mListView.setAdapter(mListAdapter);
-        new GetHomePageProductsTask().execute();
+        //new GetHomePageProductsTask().execute();
         return v;
     }
 

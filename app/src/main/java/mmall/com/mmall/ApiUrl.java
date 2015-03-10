@@ -8,6 +8,7 @@ public class ApiUrl {
 	//public static final String API_DOMAIN = "http://192.168.0.93:8098/restapi/api/";
     public static final String API_DOMAIN ="http://115.29.19.14/restapi/api/";
 
+
 	/*
 	 * 首页数据
 	 */
