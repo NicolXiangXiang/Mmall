@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingRight="10dp">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton13"
+        android:layout_alignParentTop="false"
+        android:checked="false"
+        android:layout_alignBaseline="@+id/iv_product"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/checkbox_o_bg"
+        android:button="@null" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/iv_product"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/img_default"
+        android:layout_marginLeft="45dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="真皮女包 新款 蛇纹特色 LD5003-83"
+        android:id="@+id/txt_title"
+        android:layout_alignTop="@+id/iv_product"
+        android:layout_toRightOf="@+id/iv_product"
+        android:textColor="@color/standBlack"
+        android:layout_toLeftOf="@+id/txt_discount_price"
+        android:textSize="15sp"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="颜色分类："
+        android:id="@+id/textView35"
+        android:layout_toRightOf="@+id/iv_product"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/txt_title"
+        android:textColor="@color/standGray"
+        android:textSize="12sp"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="黄棕亮纹"
+        android:id="@+id/txt_color"
+        android:layout_alignTop="@+id/textView35"
+        android:layout_toRightOf="@+id/textView35"
+        android:layout_toEndOf="@+id/textView35"
+        android:textColor="@color/standGray"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="尺码："
+        android:id="@+id/textView37"
+        android:layout_below="@+id/textView35"
+        android:layout_toRightOf="@+id/iv_product"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/standGray"
+        android:textSize="12sp"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="大号"
+        android:id="@+id/txt_size"
+        android:layout_alignTop="@+id/textView37"
+        android:layout_toRightOf="@+id/textView37"
+        android:layout_toEndOf="@+id/textView37"
+        android:textColor="@color/standGray"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="销售地："
+        android:id="@+id/txt_from"
+        android:layout_below="@+id/textView37"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/standGray"
+        android:textSize="12sp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/iv_product" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="马来西亚"
+        android:id="@+id/txt_sell_location"
+        android:layout_toRightOf="@+id/txt_from"
+        android:layout_toEndOf="@+id/txt_from"
+        android:layout_alignBaseline="@+id/txt_from"
+        android:textColor="@color/standGray"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="USD 456.00"
+        android:id="@+id/txt_price"
+        android:textColor="@color/standGray"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="USD 188.00"
+        android:id="@+id/txt_discount_price"
+        android:textColor="@color/standBlack"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt_price"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="1"
+        android:id="@+id/txt_item_sum"
+        android:textColor="@color/standBlack"
+        android:layout_below="@+id/txt_discount_price"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>

@@ -60,5 +60,10 @@
     <string name="string_common_back_home">返回首页</string>
     <string name="string_common_language_slect">语种选择</string>
     <string name="string_common_currency_select">币种选择</string>
+    <string name="string_mepaybind">Mepay绑定</string>
+    <string name="string_bind">绑定</string>
+    <string name="string_pls_mepay_account">请输入易支付帐户</string>
+    <string name="string_product_shoppingcart">产品购物车</string>
+    <string name="string_trasfer_shoppingcart">易物购物车</string>
 
 </resources>

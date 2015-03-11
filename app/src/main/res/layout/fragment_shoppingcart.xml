@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout4"
+        android:background="@drawable/border_bottom"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_more"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:src="@drawable/b_i_m" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_back"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="false"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:src="@drawable/b_i_b"
+            android:background="@null" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:background="@drawable/b_b_04"
+            android:layout_toRightOf="@+id/btn_back"
+            android:layout_toLeftOf="@+id/btn_more"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="0dp"
+            android:divider="@drawable/vertical_divider_red"
+            android:showDividers="middle" >
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/string_all"
+                android:id="@+id/radioButton6"
+                android:textColor="@drawable/groupbutton_textcolor"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:checked="true"
+                android:background="@drawable/groupbutton_left_bgcolor"
+                android:button="@null" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/string_product_shoppingcart"
+                android:id="@+id/radioButton10"
+                android:button="@null"
+                android:textColor="@drawable/groupbutton_textcolor"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:checked="false"
+                android:background="@drawable/groupbutton_middle_bgcolor" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/string_trasfer_shoppingcart"
+                android:id="@+id/radioButton11"
+                android:button="@null"
+                android:textColor="@drawable/groupbutton_textcolor"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:background="@drawable/groupbutton_right_bgcolor"
+                android:checked="false" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_shoppingcart"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:id="@+id/radioButton12"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@color/standGray"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/checkbox_o_bg"
+            android:drawablePadding="5dp"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="总计："
+            android:id="@+id/textView31"
+            android:textColor="@color/standGray"
+            android:layout_weight="1"
+            android:gravity="right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="USD 4,565.88"
+            android:id="@+id/txt_count_price"
+            android:textColor="@color/standRed"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结算"
+            android:id="@+id/btn_carsh"
+            android:background="@drawable/btn_red_bg"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:showDividers="beginning|end"
+    android:divider="@drawable/horizontal_divider_gray">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Msquare Ampang"
+            android:id="@+id/rbtn_store"
+            android:checked="false"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:button="@null"
+            android:drawableLeft="@drawable/checkbox_o_bg"
+            android:drawablePadding="5dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:id="@+id/button4"
+            android:textColor="#ff00a8ff"
+            android:textSize="15sp"
+            android:background="@null"
+            android:layout_gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/ll_products"
+        android:divider="@drawable/horizontal_divider_gray"
+        android:showDividers="beginning|middle"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/ll_actions"
+        android:layout_marginLeft="15dp"
+        android:divider="@drawable/horizontal_divider_gray"
+        android:showDividers="beginning|middle">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="邮费："
+                android:id="@+id/textView32" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="USD 456.00"
+                android:id="@+id/txt_express_price"
+                android:textColor="@color/standRed" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="共2件"
+                android:id="@+id/textView33"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="合计："
+                android:id="@+id/textView34" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="USD 456.00"
+                android:id="@+id/txt_small_count"
+                android:textColor="@color/standRed" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dp"
+            android:gravity="right">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="关闭订单"
+                android:id="@+id/btn_close_order"
+                android:background="@drawable/b_b_03"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="付款"
+                android:id="@+id/btn_pay"
+                android:background="@drawable/b_b_04" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
