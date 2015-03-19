@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout5"
+        android:background="@drawable/border_bottom"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_more"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:src="@drawable/b_i_m" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_back"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="false"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:src="@drawable/b_i_b"
+            android:background="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/string_product_detail"
+            android:id="@+id/textView36"
+            android:textColor="#000"
+            android:layout_alignParentLeft="false"
+            android:layout_marginLeft="192dp"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="23dp"
+            android:layout_centerInParent="true"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@drawable/horizontal_divider_gray"
+            android:showDividers="beginning|middle|end">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/linearLayout5"
+                android:showDividers="beginning|end"
+                android:background="@drawable/universal_item_bg"
+                android:clickable="true" >
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/linearLayout6"
+                android:showDividers="beginning|end"
+                android:background="@drawable/universal_item_bg"
+                android:clickable="true"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="真皮女包 新款 蛇纹特色 LD5003-83"
+                    android:id="@+id/txt_product_title"
+                    android:layout_weight="1"
+                    android:textColor="@color/middleBlack"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView23"
+                    android:background="@drawable/m"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="USD 456.00"
+                    android:id="@+id/textView40"
+                    android:textColor="@color/standGray"
+                    android:textSize="12sp"
+                    android:layout_alignParentRight="false"
+                    android:layout_toRightOf="@+id/txt_discount_price"
+                    android:layout_alignBaseline="@+id/txt_discount_price"
+                    android:layout_marginLeft="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="USD 188.00"
+                    android:id="@+id/txt_discount_price"
+                    android:textColor="@color/standRed"
+                    android:layout_alignParentRight="false"
+                    android:layout_below="@+id/txt_product_title"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/relativeLayout6"
+                android:showDividers="beginning|end"
+                android:background="@drawable/universal_item_bg"
+                android:clickable="true"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView22"
+                    android:background="@drawable/m"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="美国/USD200.00"
+                    android:id="@+id/txt_express_value"
+                    android:layout_weight="1"
+                    android:textColor="@color/middleBlack"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="销售地/快递费"
+                    android:id="@+id/txt_express_label"
+                    android:layout_weight="1"
+                    android:textColor="@color/middleBlack"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/relativeLayout7"
+                android:showDividers="beginning|end"
+                android:background="@drawable/universal_item_bg"
+                android:clickable="true"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView24"
+                    android:background="@drawable/m"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="真皮女包 新款 蛇纹特色 LD5003-83"
+                    android:id="@+id/textView42"
+                    android:layout_weight="1"
+                    android:textColor="@color/middleBlack"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/relativeLayout8"
+                android:showDividers="beginning|end"
+                android:background="@drawable/universal_item_bg"
+                android:clickable="true"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView25"
+                    android:background="@drawable/m"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="真皮女包 新款 蛇纹特色 LD5003-83"
+                    android:id="@+id/textView45"
+                    android:layout_weight="1"
+                    android:textColor="@color/middleBlack"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="USD 456.00"
+                    android:id="@+id/textView46"
+                    android:textColor="@color/standGray"
+                    android:textSize="12sp"
+                    android:layout_alignParentRight="false"
+                    android:layout_toRightOf="@+id/textView47"
+                    android:layout_alignBaseline="@+id/textView47"
+                    android:layout_marginLeft="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="USD 188.00"
+                    android:id="@+id/textView47"
+                    android:textColor="@color/standRed"
+                    android:layout_alignParentRight="false"
+                    android:layout_below="@+id/textView45"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/relativeLayout9"
+                android:showDividers="beginning|end"
+                android:background="@drawable/universal_item_bg"
+                android:clickable="true"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView26"
+                    android:background="@drawable/m"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="真皮女包 新款 蛇纹特色 LD5003-83"
+                    android:id="@+id/textView48"
+                    android:layout_weight="1"
+                    android:textColor="@color/middleBlack"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="USD 456.00"
+                    android:id="@+id/textView49"
+                    android:textColor="@color/standGray"
+                    android:textSize="12sp"
+                    android:layout_alignParentRight="false"
+                    android:layout_toRightOf="@+id/textView50"
+                    android:layout_alignBaseline="@+id/textView50"
+                    android:layout_marginLeft="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="USD 188.00"
+                    android:id="@+id/textView50"
+                    android:textColor="@color/standRed"
+                    android:layout_alignParentRight="false"
+                    android:layout_below="@+id/textView48"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/relativeLayout10"
+                android:showDividers="beginning|end"
+                android:background="@drawable/universal_item_bg"
+                android:clickable="true"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView27"
+                    android:background="@drawable/m"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="真皮女包 新款 蛇纹特色 LD5003-83"
+                    android:id="@+id/textView51"
+                    android:layout_weight="1"
+                    android:textColor="@color/middleBlack"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="USD 456.00"
+                    android:id="@+id/textView52"
+                    android:textColor="@color/standGray"
+                    android:textSize="12sp"
+                    android:layout_alignParentRight="false"
+                    android:layout_toRightOf="@+id/textView53"
+                    android:layout_alignBaseline="@+id/textView53"
+                    android:layout_marginLeft="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="USD 188.00"
+                    android:id="@+id/textView53"
+                    android:textColor="@color/standRed"
+                    android:layout_alignParentRight="false"
+                    android:layout_below="@+id/textView51"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

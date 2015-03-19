@@ -72,5 +72,6 @@
     <string name="string_gegin_time">上架时间</string>
     <string name="string_price">价格</string>
     <string name="string_country">国家</string>
+    <string name="string_product_detail">产品详情</string>
 
 </resources>
