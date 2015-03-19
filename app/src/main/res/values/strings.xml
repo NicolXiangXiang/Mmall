@@ -65,5 +65,12 @@
     <string name="string_pls_mepay_account">请输入易支付帐户</string>
     <string name="string_product_shoppingcart">产品购物车</string>
     <string name="string_trasfer_shoppingcart">易物购物车</string>
+    <string name="string_product_list">产品列表</string>
+    <string name="string_transfer_list">易物列表</string>
+    <string name="string_sales_volume">销量</string>
+    <string name="string_hot_deg">热度</string>
+    <string name="string_gegin_time">上架时间</string>
+    <string name="string_price">价格</string>
+    <string name="string_country">国家</string>
 
 </resources>
