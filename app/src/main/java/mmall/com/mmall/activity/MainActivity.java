@@ -24,6 +24,8 @@ import mmall.com.mmall.R;
 import mmall.com.mmall.fragment.CategoryFragment;
 import mmall.com.mmall.fragment.HomePageFragment;
 import mmall.com.mmall.fragment.MyFragment;
+import mmall.com.mmall.fragment.ShoppingCartFragment;
+import mmall.com.mmall.fragment.StoreListFragment;
 import mmall.com.mmall.services.UserService;
 
 
@@ -140,6 +142,12 @@ public class MainActivity extends FragmentActivity {
                     break;
                 case 1:
                     fragment = CategoryFragment.newInstance();
+                    break;
+                case 2:
+                    fragment = StoreListFragment.newInstance();
+                    break;
+                case 3:
+                    fragment = ShoppingCartFragment.newInstance();
                     break;
                 case 4:
                     fragment = MyFragment.newInstance();

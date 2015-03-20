@@ -58,6 +58,14 @@
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:name=".activity.RegistrationActivity">
         </activity>
+        <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:name=".activity.ProductListActivity">
+        </activity>
+        <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:name=".activity.ProductDetailActivity">
+        </activity>
     </application>
 
 </manifest>

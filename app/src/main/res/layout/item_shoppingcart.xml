@@ -3,7 +3,7 @@
     android:layout_width="match_parent" android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="#fff"
-    android:showDividers="beginning|end"
+    android:showDividers="beginning|middle|end"
     android:divider="@drawable/horizontal_divider_gray">
 
     <LinearLayout
@@ -41,7 +41,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/ll_products"
         android:divider="@drawable/horizontal_divider_gray"
         android:showDividers="beginning|middle"></LinearLayout>
@@ -67,7 +67,8 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="邮费："
-                android:id="@+id/textView32" />
+                android:id="@+id/textView32"
+                android:textColor="@color/standGray" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -91,14 +92,16 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="共2件"
                 android:id="@+id/textView33"
-                android:layout_marginRight="10dp" />
+                android:layout_marginRight="10dp"
+                android:textColor="@color/standGray" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="合计："
-                android:id="@+id/textView34" />
+                android:id="@+id/textView34"
+                android:textColor="@color/standGray" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -123,14 +126,16 @@
                 android:text="关闭订单"
                 android:id="@+id/btn_close_order"
                 android:background="@drawable/b_b_03"
-                android:layout_marginRight="10dp" />
+                android:layout_marginRight="10dp"
+                android:textColor="@color/standGray" />
 
             <Button
                 android:layout_width="120dp"
                 android:layout_height="35dp"
                 android:text="付款"
                 android:id="@+id/btn_pay"
-                android:background="@drawable/b_b_04" />
+                android:background="@drawable/b_b_04"
+                android:textColor="@color/standGray" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

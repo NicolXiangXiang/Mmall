@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:paddingRight="10dp">
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp">
 
     <RadioButton
         android:layout_width="wrap_content"
@@ -9,11 +10,10 @@
         android:id="@+id/radioButton13"
         android:layout_alignParentTop="false"
         android:checked="false"
-        android:layout_alignBaseline="@+id/iv_product"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="20dp"
-        android:background="@drawable/checkbox_o_bg"
-        android:button="@null" />
+        android:singleLine="true"
+        android:button="@drawable/checkbox_o_bg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="35dp" />
 
     <ImageView
         android:layout_width="60dp"

@@ -56,7 +56,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/scrollView" >
+        android:id="@+id/scrollView"
+        android:background="#ffe6e6e6">
 
         <LinearLayout
             android:orientation="vertical"
@@ -202,16 +203,16 @@
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:paddingLeft="15dp"
-                android:id="@+id/relativeLayout7"
+                android:id="@+id/relativeLayout11"
                 android:showDividers="beginning|end"
                 android:background="@drawable/universal_item_bg"
                 android:clickable="true"
-                android:paddingRight="10dp">
+                android:paddingRight="10dp" >
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView24"
+                    android:id="@+id/imageView28"
                     android:background="@drawable/m"
                     android:layout_alignParentLeft="false"
                     android:layout_alignParentTop="false"
@@ -222,13 +223,89 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="真皮女包 新款 蛇纹特色 LD5003-83"
-                    android:id="@+id/textView42"
+                    android:text="红色"
+                    android:id="@+id/textView38"
+                    android:layout_weight="1"
+                    android:textColor="@color/middleBlack"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="颜色尺码"
+                    android:id="@+id/textView39"
+                    android:layout_weight="1"
+                    android:textColor="@color/middleBlack"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/relativeLayout7"
+                android:showDividers="beginning|end"
+                android:background="@drawable/universal_item_bg"
+                android:clickable="true"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="尺寸/大小"
+                    android:id="@+id/textView41"
                     android:layout_weight="1"
                     android:textColor="@color/middleBlack"
                     android:textSize="15sp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="大号"
+                    android:id="@+id/btn_large"
+                    android:background="@drawable/c_b"
+                    android:layout_below="@+id/textView41"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/middleGray" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="中号"
+                    android:id="@+id/btn_middle"
+                    android:layout_toRightOf="@+id/btn_large"
+                    android:background="@drawable/c_b"
+                    android:layout_alignBaseline="@+id/btn_large"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/middleGray" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="小号"
+                    android:id="@+id/btn_small"
+                    android:layout_toRightOf="@+id/btn_middle"
+                    android:background="@drawable/c_b_s"
+                    android:layout_alignBaseline="@+id/btn_large"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/middleGray" />
 
             </RelativeLayout>
 
@@ -244,54 +321,31 @@
                 android:showDividers="beginning|end"
                 android:background="@drawable/universal_item_bg"
                 android:clickable="true"
-                android:paddingRight="10dp">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView25"
-                    android:background="@drawable/m"
-                    android:layout_alignParentLeft="false"
-                    android:layout_alignParentTop="false"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true" />
+                android:paddingRight="10dp" >
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="真皮女包 新款 蛇纹特色 LD5003-83"
-                    android:id="@+id/textView45"
+                    android:text="购买数量"
+                    android:id="@+id/textView42"
                     android:layout_weight="1"
                     android:textColor="@color/middleBlack"
                     android:textSize="15sp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true" />
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerVertical="true" />
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <EditText
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="USD 456.00"
-                    android:id="@+id/textView46"
-                    android:textColor="@color/standGray"
-                    android:textSize="12sp"
-                    android:layout_alignParentRight="false"
-                    android:layout_toRightOf="@+id/textView47"
-                    android:layout_alignBaseline="@+id/textView47"
-                    android:layout_marginLeft="15dp" />
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/editText6"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="USD 188.00"
-                    android:id="@+id/textView47"
-                    android:textColor="@color/standRed"
-                    android:layout_alignParentRight="false"
-                    android:layout_below="@+id/textView45"
-                    android:textSize="16sp"
-                    android:layout_marginTop="10dp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -306,54 +360,74 @@
                 android:showDividers="beginning|end"
                 android:background="@drawable/universal_item_bg"
                 android:clickable="true"
-                android:paddingRight="10dp">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView26"
-                    android:background="@drawable/m"
-                    android:layout_alignParentLeft="false"
-                    android:layout_alignParentTop="false"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true" />
+                android:paddingRight="10dp"
+                android:layout_marginTop="15dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="真皮女包 新款 蛇纹特色 LD5003-83"
-                    android:id="@+id/textView48"
+                    android:text="商品评价"
+                    android:id="@+id/textView43"
                     android:layout_weight="1"
                     android:textColor="@color/middleBlack"
                     android:textSize="15sp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true" />
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView24"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView24"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/i_04"
+                    android:layout_alignParentLeft="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="USD 456.00"
-                    android:id="@+id/textView49"
-                    android:textColor="@color/standGray"
-                    android:textSize="12sp"
+                    android:text=" | 200条评价"
+                    android:id="@+id/txt_comment_count"
                     android:layout_alignParentRight="false"
-                    android:layout_toRightOf="@+id/textView50"
-                    android:layout_alignBaseline="@+id/textView50"
-                    android:layout_marginLeft="15dp" />
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imv_right"
+                    android:layout_marginRight="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="USD 188.00"
-                    android:id="@+id/textView50"
-                    android:textColor="@color/standRed"
+                    android:text="84%"
+                    android:id="@+id/txt_comment_per"
                     android:layout_alignParentRight="false"
-                    android:layout_below="@+id/textView48"
-                    android:textSize="16sp"
-                    android:layout_marginTop="10dp" />
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/txt_comment_count"
+                    android:textColor="@color/standRed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text=" 评价 "
+                    android:id="@+id/txt_comment"
+                    android:layout_alignParentRight="false"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/txt_comment_per" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imv_right"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/m"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="true" />
+
             </RelativeLayout>
 
             <RelativeLayout
@@ -368,55 +442,143 @@
                 android:showDividers="beginning|end"
                 android:background="@drawable/universal_item_bg"
                 android:clickable="true"
-                android:paddingRight="10dp">
+                android:paddingRight="10dp"
+                android:layout_marginTop="15dp" >
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView27"
-                    android:background="@drawable/m"
-                    android:layout_alignParentLeft="false"
-                    android:layout_alignParentTop="false"
+                    android:id="@+id/imageView25"
                     android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true" />
+                    android:background="@drawable/i_05"
+                    android:layout_alignParentLeft="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="真皮女包 新款 蛇纹特色 LD5003-83"
-                    android:id="@+id/textView51"
+                    android:text="店铺信息"
+                    android:id="@+id/textView44"
                     android:layout_weight="1"
                     android:textColor="@color/middleBlack"
                     android:textSize="15sp"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView25"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/relativeLayout12"
+                android:showDividers="beginning|end"
+                android:background="@drawable/universal_item_bg"
+                android:clickable="true"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageView26"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/jack_jones"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="USD 456.00"
-                    android:id="@+id/textView52"
-                    android:textColor="@color/standGray"
-                    android:textSize="12sp"
-                    android:layout_alignParentRight="false"
-                    android:layout_toRightOf="@+id/textView53"
-                    android:layout_alignBaseline="@+id/textView53"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="店       铺：Jack Jones"
+                    android:id="@+id/textView45"
+                    android:layout_weight="1"
+                    android:textColor="@color/middleBlack"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView26"
                     android:layout_marginLeft="15dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="USD 188.00"
-                    android:id="@+id/textView53"
-                    android:textColor="@color/standRed"
-                    android:layout_alignParentRight="false"
-                    android:layout_below="@+id/textView51"
-                    android:textSize="16sp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="公司地址：马来西亚"
+                    android:id="@+id/textView46"
+                    android:layout_weight="1"
+                    android:textColor="@color/middleBlack"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_toRightOf="@+id/imageView26"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/textView45"
                     android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="卖       家：Msquare Ampang"
+                    android:id="@+id/textView47"
+                    android:layout_weight="1"
+                    android:textColor="@color/middleBlack"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_toRightOf="@+id/imageView26"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/textView46"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="电       邮：jack@jones.com"
+                    android:id="@+id/textView48"
+                    android:layout_weight="1"
+                    android:textColor="@color/middleBlack"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_toRightOf="@+id/imageView26"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/textView47"
+                    android:layout_marginTop="10dp" />
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="进入店铺"
+                    android:id="@+id/btn_in"
+                    android:background="@drawable/c_b"
+                    android:layout_below="@+id/imageView26"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/middleGray" />
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="收藏店铺"
+                    android:id="@+id/btn_fav"
+                    android:background="@drawable/c_b"
+                    android:layout_below="@+id/imageView26"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/middleGray" />
             </RelativeLayout>
+
         </LinearLayout>
     </ScrollView>
 

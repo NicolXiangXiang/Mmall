@@ -1,13 +1,13 @@
 package mmall.com.mmall.adapter;
 
 import android.content.Context;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import mmall.com.mmall.R;
@@ -15,17 +15,16 @@ import mmall.com.mmall.R;
 /**
  * Created by nicol.xiang on 2015/3/3.
  */
-public class CategoryListAdapter extends BaseAdapter {
+public class ShoppingCartAdapter extends BaseAdapter {
     private Context mContext;
-    private String[] mCategorys={"3C产品","服装","鞋帽","家居"};
 
-    public CategoryListAdapter(Context context){
+    public ShoppingCartAdapter(Context context){
         mContext=context;
     }
 
     @Override
     public int getCount() {
-        return mCategorys.length;
+        return 3;
     }
 
     @Override
@@ -42,22 +41,17 @@ public class CategoryListAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder=new ViewHolder();
         if(convertView==null) {
-            convertView = LayoutInflater.from(mContext).inflate(R.layout.item_category, null);
-            holder.imgIcon=(ImageView)convertView.findViewById(R.id.iv_icon);
-            holder.txtTitle=(TextView)convertView.findViewById(R.id.txt_title);
-            holder.gvSubCategory=(GridView)convertView.findViewById(R.id.gv_subcategory);
+            convertView = LayoutInflater.from(mContext).inflate(R.layout.item_shoppingcart, null);
+            holder.llProducts=(LinearLayout)convertView.findViewById(R.id.ll_products);
             convertView.setTag(holder);
         }else{
             holder=(ViewHolder)convertView.getTag();
         }
-        holder.txtTitle.setText(mCategorys[position]);
-        holder.gvSubCategory.setAdapter(new CategoryItemAdapter(mContext));
+        holder.llProducts.addView( LayoutInflater.from(mContext).inflate(R.layout.item_item_shoppingcart, null));
         return convertView;
     }
 
    public class ViewHolder{
-        ImageView imgIcon;
-        TextView txtTitle;
-        GridView gvSubCategory;
+        LinearLayout llProducts;
     }
 }
